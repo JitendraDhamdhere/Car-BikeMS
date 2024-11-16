@@ -56,6 +56,12 @@ namespace carandbike1
                 da.Fill(ds);
                 RentDGV.DataSource = ds.Tables[0];
             }
+            using (var da = new SqlDataAdapter("SELECT * FROM ReturnTbl", Con))
+            {
+                var ds = new DataSet();
+                da.Fill(ds);
+                ReturnDGV.DataSource = ds.Tables[0];
+            }
         }
 
         private void populateRet()
@@ -72,11 +78,10 @@ namespace carandbike1
         {
             if (RentDGV.SelectedRows.Count > 0)
             {
-                int rentId = Convert.ToInt32(RentDGV.SelectedRows[0].Cells[0].Value);
 
-                using (var cmd = new SqlCommand("DELETE FROM RentalTbl WHERE RentId = @RentId", Con))
+                using (var cmd = new SqlCommand("DELETE FROM RentalTbl WHERE CarReg = @RentId", Con))
                 {
-                    cmd.Parameters.AddWithValue("@RentId", rentId);
+                    cmd.Parameters.AddWithValue("@RentId", CarIdTb.Text);
                     Con.Open();
                     cmd.ExecuteNonQuery();
                     Con.Close();
@@ -169,7 +174,7 @@ namespace carandbike1
                 // Notify success and refresh UI
                 MessageBox.Show("Car Successfully Returned");
                 populate(); // Refresh data grid
-              //  Deleteonreturn(); // Optional: Implement if needed
+               Deleteonreturn(); // Optional: Implement if needed
                 AutoIdGeneration(); // Reset ID generation
             }
             catch (Exception ex)

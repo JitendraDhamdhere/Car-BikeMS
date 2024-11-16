@@ -25,7 +25,7 @@ namespace carandbike1
             try
             {
                 Con.Open();
-                var cmd = new SqlCommand("SELECT MAX(ReturnId) + 1 FROM ReturnTbl", Con);
+                var cmd = new SqlCommand("SELECT MAX(ReturnId) + 1 FROM BikeReturnTbl", Con);
                 var result = cmd.ExecuteScalar();
 
                 if (Convert.IsDBNull(result))
@@ -51,17 +51,23 @@ namespace carandbike1
         }
         private void populate()
         {
-            using (var da = new SqlDataAdapter("SELECT * FROM RentalTbl", Con))
+            using (var da = new SqlDataAdapter("SELECT * FROM BikeRentalTbl", Con))
             {
                 var ds = new DataSet();
                 da.Fill(ds);
                 RentDGV.DataSource = ds.Tables[0];
             }
+            using (var da = new SqlDataAdapter("SELECT * FROM BikeReturnTbl", Con))
+            {
+                var ds = new DataSet();
+                da.Fill(ds);
+                ReturnDGV.DataSource = ds.Tables[0];
+            }
         }
 
         private void populateRet()
         {
-            using (var da = new SqlDataAdapter("SELECT * FROM ReturnTbl", Con))
+            using (var da = new SqlDataAdapter("SELECT * FROM BikeReturnTbl", Con))
             {
                 var ds = new DataSet();
                 da.Fill(ds);
@@ -73,11 +79,10 @@ namespace carandbike1
         {
             if (RentDGV.SelectedRows.Count > 0)
             {
-                int rentId = Convert.ToInt32(RentDGV.SelectedRows[0].Cells[0].Value);
 
-                using (var cmd = new SqlCommand("DELETE FROM RentalTbl WHERE RentId = @RentId", Con))
+                using (var cmd = new SqlCommand("DELETE FROM BikeRentalTbl WHERE CarReg = @RentId", Con))
                 {
-                    cmd.Parameters.AddWithValue("@RentId", rentId);
+                    cmd.Parameters.AddWithValue("@RentId", CarIdTb.Text);
                     Con.Open();
                     cmd.ExecuteNonQuery();
                     Con.Close();
@@ -102,7 +107,7 @@ namespace carandbike1
             try
             {
                 // Insert return details into ReturnTbl
-                using (var insertCmd = new SqlCommand("INSERT INTO ReturnTbl (CarReg, CustName, ReturnDate, Delay, Fine) VALUES (@CarId, @CustName, @ReturnDate, @Delay, @Fine)", Con))
+                using (var insertCmd = new SqlCommand("INSERT INTO BikeReturnTbl (CarReg, CustName, ReturnDate, Delay, Fine) VALUES (@CarId, @CustName, @ReturnDate, @Delay, @Fine)", Con))
                 {
                     insertCmd.Parameters.AddWithValue("@CarId", CarIdTb.Text);
                     insertCmd.Parameters.AddWithValue("@CustName", CustNameTb.Text);
@@ -116,7 +121,7 @@ namespace carandbike1
                 }
 
                 // Update availability in CarTbl
-                using (var updateCmd = new SqlCommand("UPDATE CarTbl SET Available = 'YES' WHERE RegNum = @CarId", Con))
+                using (var updateCmd = new SqlCommand("UPDATE BikeTbl SET Available = 'YES' WHERE RegNum = @CarId", Con))
                 {
                     updateCmd.Parameters.AddWithValue("@CarId", CarIdTb.Text);
 
@@ -125,10 +130,9 @@ namespace carandbike1
                     Con.Close(); // Close connection after execution
                 }
 
-                // Notify success and refresh UI
-                MessageBox.Show("Car Successfully Returned");
+                MessageBox.Show("Bike Successfully Returned");
                 populate(); // Refresh data grid
-               // Deleteonreturn(); // Optional: Implement if needed
+                Deleteonreturn(); // Optional: Implement if needed
                 AutoIdGeneration(); // Reset ID generation
             }
             catch (Exception ex)

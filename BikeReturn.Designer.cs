@@ -93,10 +93,9 @@
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(502, 475);
-            pictureBox10.Margin = new Padding(3, 2, 3, 2);
+            pictureBox10.Location = new Point(574, 633);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(397, 40);
+            pictureBox10.Size = new Size(454, 53);
             pictureBox10.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox10.TabIndex = 111;
             pictureBox10.TabStop = false;
@@ -104,10 +103,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(905, -1);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(1034, -1);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(23, 516);
+            pictureBox4.Size = new Size(26, 688);
             pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox4.TabIndex = 110;
             pictureBox4.TabStop = false;
@@ -122,11 +120,10 @@
             guna2Button5.FillColor = Color.Red;
             guna2Button5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button5.ForeColor = Color.White;
-            guna2Button5.Location = new Point(44, 393);
-            guna2Button5.Margin = new Padding(3, 2, 3, 2);
+            guna2Button5.Location = new Point(50, 524);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button5.Size = new Size(68, 33);
+            guna2Button5.Size = new Size(78, 44);
             guna2Button5.TabIndex = 109;
             guna2Button5.Text = "Add";
             guna2Button5.Click += guna2Button5_Click;
@@ -146,14 +143,14 @@
             guna2TextBox2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2TextBox2.ForeColor = Color.Black;
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(612, 248);
-            guna2TextBox2.Margin = new Padding(4);
+            guna2TextBox2.Location = new Point(699, 331);
+            guna2TextBox2.Margin = new Padding(5);
             guna2TextBox2.Name = "guna2TextBox2";
             guna2TextBox2.PasswordChar = '\0';
             guna2TextBox2.PlaceholderText = "";
             guna2TextBox2.SelectedText = "";
             guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox2.Size = new Size(158, 46);
+            guna2TextBox2.Size = new Size(181, 61);
             guna2TextBox2.TabIndex = 108;
             // 
             // ReturnDGV
@@ -178,13 +175,11 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             ReturnDGV.DefaultCellStyle = dataGridViewCellStyle3;
             ReturnDGV.GridColor = Color.FromArgb(231, 229, 255);
-            ReturnDGV.Location = new Point(437, 293);
-            ReturnDGV.Margin = new Padding(3, 2, 3, 2);
+            ReturnDGV.Location = new Point(499, 391);
             ReturnDGV.Name = "ReturnDGV";
             ReturnDGV.RowHeadersVisible = false;
             ReturnDGV.RowHeadersWidth = 51;
-            ReturnDGV.RowTemplate.Height = 29;
-            ReturnDGV.Size = new Size(442, 162);
+            ReturnDGV.Size = new Size(505, 216);
             ReturnDGV.TabIndex = 107;
             ReturnDGV.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             ReturnDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -223,14 +218,14 @@
             guna2TextBox6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2TextBox6.ForeColor = Color.Black;
             guna2TextBox6.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox6.Location = new Point(612, 27);
-            guna2TextBox6.Margin = new Padding(4);
+            guna2TextBox6.Location = new Point(699, 36);
+            guna2TextBox6.Margin = new Padding(5);
             guna2TextBox6.Name = "guna2TextBox6";
             guna2TextBox6.PasswordChar = '\0';
             guna2TextBox6.PlaceholderText = "";
             guna2TextBox6.SelectedText = "";
             guna2TextBox6.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox6.Size = new Size(158, 46);
+            guna2TextBox6.Size = new Size(181, 61);
             guna2TextBox6.TabIndex = 106;
             // 
             // RentDGV
@@ -255,13 +250,11 @@
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
             RentDGV.DefaultCellStyle = dataGridViewCellStyle6;
             RentDGV.GridColor = Color.FromArgb(231, 229, 255);
-            RentDGV.Location = new Point(437, 79);
-            RentDGV.Margin = new Padding(3, 2, 3, 2);
+            RentDGV.Location = new Point(499, 105);
             RentDGV.Name = "RentDGV";
             RentDGV.RowHeadersVisible = false;
             RentDGV.RowHeadersWidth = 51;
-            RentDGV.RowTemplate.Height = 29;
-            RentDGV.Size = new Size(442, 162);
+            RentDGV.Size = new Size(505, 216);
             RentDGV.TabIndex = 105;
             RentDGV.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             RentDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -296,11 +289,10 @@
             guna2Button4.FillColor = Color.Red;
             guna2Button4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(148, 393);
-            guna2Button4.Margin = new Padding(3, 2, 3, 2);
+            guna2Button4.Location = new Point(169, 524);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button4.Size = new Size(68, 33);
+            guna2Button4.Size = new Size(78, 44);
             guna2Button4.TabIndex = 104;
             guna2Button4.Text = "Back";
             guna2Button4.Click += guna2Button4_Click;
@@ -320,15 +312,15 @@
             guna2TextBox4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2TextBox4.ForeColor = Color.Black;
             guna2TextBox4.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Location = new Point(18, 319);
-            guna2TextBox4.Margin = new Padding(4);
+            guna2TextBox4.Location = new Point(21, 425);
+            guna2TextBox4.Margin = new Padding(5);
             guna2TextBox4.Name = "guna2TextBox4";
             guna2TextBox4.PasswordChar = '\0';
             guna2TextBox4.PlaceholderForeColor = Color.FromArgb(255, 128, 255);
             guna2TextBox4.PlaceholderText = "";
             guna2TextBox4.SelectedText = "";
             guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2TextBox4.Size = new Size(83, 32);
+            guna2TextBox4.Size = new Size(95, 43);
             guna2TextBox4.TabIndex = 103;
             // 
             // FineTb
@@ -337,11 +329,10 @@
             FineTb.Enabled = false;
             FineTb.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FineTb.ForeColor = SystemColors.WindowText;
-            FineTb.Location = new Point(135, 319);
-            FineTb.Margin = new Padding(3, 2, 3, 2);
+            FineTb.Location = new Point(154, 425);
             FineTb.Multiline = true;
             FineTb.Name = "FineTb";
-            FineTb.Size = new Size(212, 30);
+            FineTb.Size = new Size(322, 39);
             FineTb.TabIndex = 102;
             FineTb.UseWaitCursor = true;
             // 
@@ -351,11 +342,10 @@
             DelayTb.Enabled = false;
             DelayTb.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DelayTb.ForeColor = SystemColors.WindowText;
-            DelayTb.Location = new Point(135, 272);
-            DelayTb.Margin = new Padding(3, 2, 3, 2);
+            DelayTb.Location = new Point(154, 363);
             DelayTb.Multiline = true;
             DelayTb.Name = "DelayTb";
-            DelayTb.Size = new Size(212, 30);
+            DelayTb.Size = new Size(322, 39);
             DelayTb.TabIndex = 101;
             DelayTb.UseWaitCursor = true;
             // 
@@ -374,15 +364,15 @@
             Delay.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Delay.ForeColor = Color.Black;
             Delay.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Delay.Location = new Point(18, 272);
-            Delay.Margin = new Padding(4);
+            Delay.Location = new Point(21, 363);
+            Delay.Margin = new Padding(5);
             Delay.Name = "Delay";
             Delay.PasswordChar = '\0';
             Delay.PlaceholderForeColor = Color.FromArgb(255, 128, 255);
             Delay.PlaceholderText = "";
             Delay.SelectedText = "";
             Delay.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            Delay.Size = new Size(83, 32);
+            Delay.Size = new Size(95, 43);
             Delay.TabIndex = 100;
             // 
             // guna2TextBox8
@@ -400,15 +390,15 @@
             guna2TextBox8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2TextBox8.ForeColor = Color.Black;
             guna2TextBox8.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox8.Location = new Point(-6, 232);
-            guna2TextBox8.Margin = new Padding(4);
+            guna2TextBox8.Location = new Point(-7, 309);
+            guna2TextBox8.Margin = new Padding(5);
             guna2TextBox8.Name = "guna2TextBox8";
             guna2TextBox8.PasswordChar = '\0';
             guna2TextBox8.PlaceholderForeColor = Color.FromArgb(255, 128, 255);
             guna2TextBox8.PlaceholderText = "";
             guna2TextBox8.SelectedText = "";
             guna2TextBox8.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2TextBox8.Size = new Size(126, 31);
+            guna2TextBox8.Size = new Size(144, 41);
             guna2TextBox8.TabIndex = 99;
             // 
             // ReturnDate
@@ -419,13 +409,12 @@
             ReturnDate.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ReturnDate.ForeColor = SystemColors.ActiveCaptionText;
             ReturnDate.Format = DateTimePickerFormat.Long;
-            ReturnDate.Location = new Point(135, 242);
-            ReturnDate.Margin = new Padding(3, 2, 3, 2);
+            ReturnDate.Location = new Point(154, 323);
             ReturnDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             ReturnDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             ReturnDate.Name = "ReturnDate";
             ReturnDate.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            ReturnDate.Size = new Size(212, 21);
+            ReturnDate.Size = new Size(322, 28);
             ReturnDate.TabIndex = 98;
             ReturnDate.Value = new DateTime(2024, 9, 11, 14, 47, 47, 569);
             // 
@@ -444,24 +433,23 @@
             guna2TextBox5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2TextBox5.ForeColor = Color.Black;
             guna2TextBox5.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox5.Location = new Point(29, 195);
-            guna2TextBox5.Margin = new Padding(4);
+            guna2TextBox5.Location = new Point(33, 260);
+            guna2TextBox5.Margin = new Padding(5);
             guna2TextBox5.Name = "guna2TextBox5";
             guna2TextBox5.PasswordChar = '\0';
             guna2TextBox5.PlaceholderForeColor = Color.FromArgb(255, 128, 255);
             guna2TextBox5.PlaceholderText = "";
             guna2TextBox5.SelectedText = "";
             guna2TextBox5.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2TextBox5.Size = new Size(83, 32);
+            guna2TextBox5.Size = new Size(95, 43);
             guna2TextBox5.TabIndex = 97;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(43, 16);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(49, 21);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(304, 56);
+            pictureBox3.Size = new Size(347, 75);
             pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox3.TabIndex = 96;
             pictureBox3.TabStop = false;
@@ -481,15 +469,15 @@
             guna2TextBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2TextBox3.ForeColor = Color.Black;
             guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(37, 145);
-            guna2TextBox3.Margin = new Padding(4);
+            guna2TextBox3.Location = new Point(42, 193);
+            guna2TextBox3.Margin = new Padding(5);
             guna2TextBox3.Name = "guna2TextBox3";
             guna2TextBox3.PasswordChar = '\0';
             guna2TextBox3.PlaceholderForeColor = Color.FromArgb(255, 128, 255);
             guna2TextBox3.PlaceholderText = "";
             guna2TextBox3.SelectedText = "";
             guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2TextBox3.Size = new Size(83, 32);
+            guna2TextBox3.Size = new Size(95, 43);
             guna2TextBox3.TabIndex = 95;
             // 
             // guna2TextBox1
@@ -507,15 +495,15 @@
             guna2TextBox1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2TextBox1.ForeColor = Color.Black;
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(55, 99);
-            guna2TextBox1.Margin = new Padding(4);
+            guna2TextBox1.Location = new Point(63, 132);
+            guna2TextBox1.Margin = new Padding(5);
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderForeColor = Color.FromArgb(255, 128, 255);
             guna2TextBox1.PlaceholderText = "";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2TextBox1.Size = new Size(57, 31);
+            guna2TextBox1.Size = new Size(65, 41);
             guna2TextBox1.TabIndex = 94;
             // 
             // guna2Button3
@@ -528,11 +516,10 @@
             guna2Button3.FillColor = Color.Red;
             guna2Button3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(251, 393);
-            guna2Button3.Margin = new Padding(3, 2, 3, 2);
+            guna2Button3.Location = new Point(287, 524);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            guna2Button3.Size = new Size(79, 33);
+            guna2Button3.Size = new Size(90, 44);
             guna2Button3.TabIndex = 93;
             guna2Button3.Text = "Delete";
             guna2Button3.Click += guna2Button3_Click;
@@ -542,11 +529,10 @@
             CarIdTb.BackColor = Color.LightGray;
             CarIdTb.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CarIdTb.ForeColor = SystemColors.WindowText;
-            CarIdTb.Location = new Point(135, 148);
-            CarIdTb.Margin = new Padding(3, 2, 3, 2);
+            CarIdTb.Location = new Point(154, 197);
             CarIdTb.Multiline = true;
             CarIdTb.Name = "CarIdTb";
-            CarIdTb.Size = new Size(212, 30);
+            CarIdTb.Size = new Size(322, 39);
             CarIdTb.TabIndex = 92;
             CarIdTb.UseWaitCursor = true;
             // 
@@ -555,11 +541,10 @@
             CustNameTb.BackColor = Color.LightGray;
             CustNameTb.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CustNameTb.ForeColor = SystemColors.WindowText;
-            CustNameTb.Location = new Point(135, 197);
-            CustNameTb.Margin = new Padding(3, 2, 3, 2);
+            CustNameTb.Location = new Point(154, 263);
             CustNameTb.Multiline = true;
             CustNameTb.Name = "CustNameTb";
-            CustNameTb.Size = new Size(212, 30);
+            CustNameTb.Size = new Size(322, 39);
             CustNameTb.TabIndex = 91;
             CustNameTb.UseWaitCursor = true;
             // 
@@ -568,30 +553,28 @@
             IdTb.BackColor = Color.LightGray;
             IdTb.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             IdTb.ForeColor = SystemColors.WindowText;
-            IdTb.Location = new Point(135, 99);
-            IdTb.Margin = new Padding(3, 2, 3, 2);
+            IdTb.Location = new Point(154, 132);
             IdTb.Multiline = true;
             IdTb.Name = "IdTb";
-            IdTb.Size = new Size(212, 30);
+            IdTb.Size = new Size(322, 39);
             IdTb.TabIndex = 90;
             IdTb.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-133, 120);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(-152, 160);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(602, 362);
+            pictureBox2.Size = new Size(688, 483);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 89;
             pictureBox2.TabStop = false;
             // 
             // BikeReturn
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(974, 477);
+            ClientSize = new Size(1113, 636);
             Controls.Add(pictureBox10);
             Controls.Add(pictureBox4);
             Controls.Add(guna2Button5);
@@ -616,6 +599,7 @@
             Controls.Add(IdTb);
             Controls.Add(pictureBox2);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "BikeReturn";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "BikeReturn";
