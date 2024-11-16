@@ -52,31 +52,6 @@ CREATE TABLE [dbo].[UserTbl] (
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
-CREATE TABLE [dbo].[PaymentTbl] (
-    [PaymentId]     INT IDENTITY(1,1) NOT NULL,
-    [RentalId]      INT NULL,
-    [CustId]        INT NULL,
-    [Amount]        DECIMAL(10, 2) NULL,
-    [PaymentDate]   DATE NULL,
-    [PaymentMethod] VARCHAR(50) NULL,
-    PRIMARY KEY CLUSTERED ([PaymentId] ASC),
-    FOREIGN KEY ([RentalId]) REFERENCES [dbo].[RentalTbl] ([RentId]),
-    FOREIGN KEY ([CustId]) REFERENCES [dbo].[CustomerTbl] ([CustId])
-);
-
-
-
-CREATE TABLE [dbo].[BikePaymentTbl] (
-    [PaymentId]     INT             IDENTITY (1, 1) NOT NULL,
-    [RentalId]      INT             NULL,
-    [CustId]        INT             NULL,
-    [Amount]        DECIMAL (10, 2) NULL,
-    [PaymentDate]   DATE            NULL,
-    [PaymentMethod] VARCHAR (50)    NULL,
-    PRIMARY KEY CLUSTERED ([PaymentId] ASC),
-    FOREIGN KEY ([RentalId]) REFERENCES [dbo].[BikeRentalTbl] ([RentId]),
-    FOREIGN KEY ([CustId]) REFERENCES [dbo].[BikeCustomerTbl] ([CustId])
-);
 
 
 
